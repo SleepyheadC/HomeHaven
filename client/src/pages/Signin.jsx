@@ -43,7 +43,7 @@ export default function Signin() {
         // of everything goes right till this point just
         // go to the sign in page
       dispatch(signInSuccess(data));
-      navigate('/sign-in');
+      navigate('/');
     }
 
     catch(error){
