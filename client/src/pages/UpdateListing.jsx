@@ -269,7 +269,7 @@ export default function UpdateListing () {
                 onChange={handleChange}
                 value={formData.bedrooms}
               />
-              <p>Beds</p>
+              <p>Bedrooms</p>
             </div>
             <div className='flex items-center gap-2'>
               <input
@@ -282,7 +282,7 @@ export default function UpdateListing () {
                 onChange={handleChange}
                 value={formData.bathrooms}
               />
-              <p>Baths</p>
+              <p>Bathrooms</p>
             </div>
             <div className='flex items-center gap-2'>
               <input
