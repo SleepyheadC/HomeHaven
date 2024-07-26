@@ -27,7 +27,12 @@ export default function CreateListing() {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  
   console.log(formData);
+
+  const goToHome = () => {
+    navigate("/")
+  }
 
   const handleImageSubmit = (e) => {
     if(files.length>0 && files.length + formData.imageUrls.length <7){
@@ -228,9 +233,11 @@ export default function CreateListing() {
                        </div>
                     ))
                 }
-                <button disabled = {loading || uploading} className = 'p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
+                <button disabled = {loading || uploading} className = 'p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80' onClick = {() => goToHome()}>
                 {loading?'Creating...':'Create Listing'}
+                
                 </button>
+                
                 {error && <p className = 'text-red-700 text-sm'>{error}</p>}
             </div>
             
