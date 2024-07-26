@@ -244,10 +244,11 @@ export default function Search() {
               Show more
             </button>
             
-            
           )}
         </div>
       </div>
     </div>
   );
 }
+
+
